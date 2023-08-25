@@ -1,0 +1,89 @@
+<template>
+    <lightning-card title="tek yonlu binding" >
+        <h1>benim adim Mahmut........
+            {isim} 
+        </h1>
+
+        <h2> xxxxxxxxxxx {ad}</h2>
+
+
+    </lightning-card>
+    <lightning-card title="cift yonlu binding">
+        <lightning-input 
+        type="text" 
+        label="Enter some text" 
+        placeholder="isminizi yaziniz"
+        onchange={handleinput}>
+    </lightning-input>
+
+    <h1> Benim adim {ad}</h1>
+
+        
+    </lightning-card>
+
+    <lightning-card title=" veri manipule">
+       
+
+
+    <lightning-input 
+    type="text" 
+    label="Enter some text" 
+    placeholder="isminizi yaziniz"
+    onchange={handleisim}>
+</lightning-input>
+
+
+<lightning-input 
+type="text" 
+label="Enter some text" 
+placeholder="soyisminizi yaziniz"
+onchange={handlesoyisim}>
+</lightning-input>
+ <h1>{isimlerbuyukHarf}</h1>
+
+</lightning-card>
+
+<lightning-card title="sayi1" >
+
+    <lightning-input 
+    type="number"
+    label="enter number"
+    placeholder="only number"
+    onchange={handlesayi1}>
+    </lightning-input>
+</lightning-card>
+
+
+<lightning-card title="sayi2" >
+
+    <lightning-input 
+    type="number"
+    label="enter number"
+    placeholder="only number"
+    onchange={handlesayi2}>
+    </lightning-input>
+</lightning-card>
+
+
+<!--
+<lightning-card title="sayicarpim" >
+
+    <lightning-input 
+    type="number"
+    label="enter number"
+    placeholder="only number"
+    onchange={carpim}>
+    </lightning-input>
+</lightning-card>
+-->
+
+
+<h1>{carpim}</h1>
+
+
+
+
+
+
+
+</template>

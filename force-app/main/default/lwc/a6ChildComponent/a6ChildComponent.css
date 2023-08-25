@@ -1,0 +1,12 @@
+h1{
+    color: rgb(12, 92, 161);
+}
+
+.guzel{
+    color: var(--hookdeneme,  rgb(127, 22, 225));
+    background-color: rgb(192, 229, 248);
+    display: inline-block;
+    font-style: italic;
+
+
+}

@@ -1,0 +1,66 @@
+<template>
+   <!-- <lightning-card title="Track Decorator">
+
+    <lightning-input
+        type="text"
+        label="Isim"
+        placeholder="Isminizi yaziniz"
+        onchange={handleIsim}>
+    </lightning-input>
+
+
+    <lightning-input
+        type="text"
+        label="Yas"
+        placeholder="Yasinizi yaziniz"
+        onchange={handleYas}>
+    </lightning-input>
+ -->
+        <!-- <h1>Bireyin ismi : {birey.name}</h1>
+        <h1>  Bireyin yasi: {birey.age} </h1> --> 
+<!-- 
+   </lightning-card>  -->
+
+
+<lightning-card title=" @track Whit LIST">
+
+    <lightning-input
+    type="text"
+    label="Isim"
+    placeholder="Isminizi yaziniz"
+    onchange={handleIsim}>
+</lightning-input>
+
+
+<lightning-input
+    type="text"
+    label="Yas"
+    placeholder="Yasinizi yaziniz"
+    onchange={handleYas}>
+</lightning-input>
+
+<br>
+
+   <lightning-button
+   variant="brand"
+   label="Isim-Yas Ekle"
+   title="Birey Ekle"
+   onclick={handleClick}
+   class="slds-m-left_x-small">
+</lightning-button>
+
+
+   <template for:each={aileBireyleri} for:item="deneme">
+    <ol  key={deneme.id} >
+       
+        <li type="a"> isim : {deneme.ad}  ***  yasi:{deneme.Yas}</li>
+
+
+    </ol>
+
+
+
+   </template>
+</lightning-card>
+
+</template>

@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="conditional rendering">
+
+
+        <lightning-input 
+        type="checkbox"
+        label="check box"
+        checked={goster}
+        onchange={handlegoster}
+        ></lightning-input>
+
+    <template if:true={goster}>
+        <lightning-card>
+             <h1 class="slds-text-heading_large">isaretlendi</h1>
+        </lightning-card>
+      
+    </template>
+
+        
+    <template if:false={goster}>
+    
+         <h1 class="slds-text-heading_large">maalesef</h1>
+
+    </template>
+       
+    
+    
+    
+        </lightning-card>
+
+
+
+
+
+    
+</template>

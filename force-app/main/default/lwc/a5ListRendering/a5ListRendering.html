@@ -1,0 +1,50 @@
+<template>
+    <lightning-card title="list rendering">
+
+  <template for:each={sehirler} for:item="acc">
+        <h1 key= {acc}> {acc}</h1>
+
+  </template>
+
+    </lightning-card>
+
+    <lightning-card title="iterator  rendering">
+
+        <template iterator:it={sehirler} >
+                       
+             <h1 key= {it.value} if:true={it.last}> -----SONNN-----</h1> 
+             <h1 key= {it.value}> {it.value}</h1> 
+             <h1 key= {it.value} if:true={it.first}> +++++++BASLIK++++++</h1>
+        </template>
+      
+          </lightning-card>
+      
+      
+
+
+
+
+
+
+    <lightning-card title="list rendering cicekler">
+
+        <template for:each={cicekListesi} for:item="cicek">
+            <ol key= {cicek}>
+                <li>{cicek.name}</li> <li>{cicek.familya}</li>
+                <img style="height: 50px;" alt="cicek" src= {cicek.imgUrl}>
+
+
+            </ol>
+              
+              
+      
+        </template>
+    </lightning-card>
+      
+
+
+
+
+
+    
+</template>

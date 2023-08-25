@@ -1,0 +1,13 @@
+h1{
+
+    color: rgb(215, 114, 115);
+}
+p{
+
+    color: rgb(146, 146, 8);
+}
+c-a6-child-component{
+
+    color: rgb(31, 230, 9);
+    --hookdeneme: rgb(215, 31, 31);
+}
